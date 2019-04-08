@@ -1,0 +1,32 @@
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+td {
+    border: 1px solid black;
+}
+thead {
+    background: green;
+    color: white;
+    text-align: center;
+}
+tbody {
+    text-align: center;
+}
+tbody tr:nth-child(even){
+    background: #c8e3d2;
+}
+tbody td:first-child {
+    text-align: left
+}
+ img {
+    float: right
+} 
+ul li {
+    list-style: none;
+    
+}
+ul li::before {
+    content:"\2714\0020";
+}
