@@ -1,0 +1,11 @@
+p::after {
+    content: "Tghj";
+    color: brown;
+}
+p::before {
+    content: "Text ";
+    color: blue;
+}
+p::first-letter {
+    color: blueviolet;
+}

@@ -1,0 +1,157 @@
+.b1 {
+    border: 3px dashed green;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.b2 {
+    border: 3px dotted black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.b3 {
+    position: relative;
+    left: 50px;
+    top: 30px;
+    border: 3px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.b4 {
+    border: 3px double yellow;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.b5 {
+    border: 3px groove pink;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+    left: 100px;
+    top: 470px;
+}
+.b6 {
+    visibility: hidden;
+    border: 3px ridge violet;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.b7 {
+    display: none;
+    border: 3px dashed green;
+    width: 100px;
+    height: 10px;
+    margin: 10px;
+}
+.b8 {
+    border: 3px outset rgb(115, 128, 0);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.b9 {
+    border: 3px dashed green;
+    border-top: 3px inset gray;
+    border-bottom: 3px solid blue;
+    border-right: 3px dotted red;
+    border-left:3px dashed gold;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+
+}
+.span-block {
+    display: block;
+    border: 3px solid green;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
+.inline-h1 {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+    width: 75px;
+    height: 50px;
+    margin: 10px;
+    border: 3px dotted black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    float: left;
+    background-color: #BD4932;
+}
+li a {
+    display: block;
+    padding: .5em 1em;
+    color:white;
+}
+.table {
+    display: table;
+    margin: auto;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+.main {
+    width: 50%;
+    height: 500px;
+    background-color: red;
+    float: left;
+}
+.sidebar {
+    width: 25%;
+    height: 500px;
+    background-color:green;
+    float: left;
+}
+.menu {
+    width: 25%;
+    height: 500px;
+    background-color: yellow;
+    float: left;
+};
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: violet;
+    clear: both;
+    float: left;
+}
+.content {
+    width: 900px;
+    margin: 20px auto;
+    border: 3px solid red;
+}
+.left {
+    float: left;
+    background: #15bb9a;
+    width: 250px;
+ 
+}
+.right {
+    float: right;
+    background: #BD4932;
+    width: 650px;
+
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
