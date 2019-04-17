@@ -1,0 +1,115 @@
+img {
+    position: absolute;
+}
+.img_1 {
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+}
+.img_2 {
+    top: 115px;
+    left: 65px;
+    z-index: 2;
+}
+.img_3 {
+    top: 130px;
+    left: 80px;
+    z-index: 3;
+}
+.img_4 {
+    top: 145px;
+    left: 95px;
+    z-index: 4;
+}
+.img_5 {
+    top: 160px;
+    left: 110px;
+    z-index: 5;
+}
+img:hover {
+    z-index: 10;
+}
+.sprite1 {
+	width: 200px;
+	height: 200px; 
+	background:url(/images/icon.jpg);
+	background-position: 0px 0px; 
+}
+.sprite2 {
+	width: 200px;
+	height: 200px; 
+	background:url(/images/icon2.png);
+	background-position: 0px 0px; 
+}
+.sprite1:hover {
+	background-position: 0px -190px;
+}
+.sprite2:hover {
+	background-position: 0px -190px;
+}
+p {
+    font-family: Dokdo;
+}
+.background_1 {
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 15pt 45pt;
+    box-shadow: inset 8px 10px 10px 10px blue;
+    border: 5px solid green;
+    outline: 3px dashed gray;
+    outline-offset: 3px;
+} 
+.background_2 {
+    background-image: url(/images/forest.jpg);
+    background-position: -105px -100px;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+.background_3 {
+    background-image: url(/images/cat.jpg);
+    background-repeat: space;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+.background_4 {
+    background-image: url(/images/hedgehog.jpg);
+    background-repeat: round;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+.background_5 {
+    background-image: url(/images/hedgehog.jpg);
+    background-attachment: fixed;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+.background_6 {
+    background: 
+    url(/images/hedgehog.jpg) 0 100px no-repeat,
+    url(/images/cat.jpg) 40 80px no-repeat,
+    url(/images/forest.jpg) 0px 0px no-repeat;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+.image {
+    background-image: url(/images/cat.jpg);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    opacity: 0.5;
+}
+.clip {
+    white-space: nowrap;
+    overflow: hidden;
+    background: #fc0;
+    text-overflow: ellipsis;
+    width: 200px;
+    height: 50px;
+}
