@@ -1,0 +1,64 @@
+.chessboard {
+    width: 600px;
+    height: 600px;
+    margin: 20px;
+    border: 2px solid black;
+  }
+  
+  .black {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+    /* border: 1px solid black; */
+  }
+  
+  .white {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    font-size: 60px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .top-line {
+    float: left;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transform: rotate(180deg);
+  }
+  
+  .bottom-line {
+    float: left;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .left-line {
+    float: left;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .right-line {
+    float: left;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transform: rotate(180deg);
+  }
+  
