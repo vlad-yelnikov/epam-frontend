@@ -1,0 +1,32 @@
+.span_1 {
+    text-decoration: underline;
+    color: brown;
+    font-weight: bold;
+}
+.span_2 {
+    font-weight: bold;
+}
+p {
+    font-family: tahoma;
+    font-size: 12pt;
+    text-indent: 30px;
+    margin: 0px;
+    margin-left: 40px;
+    text-align: justify;
+}
+.times {
+    font-family:'Times New Roman';
+    text-indent: 10px;
+    margin-bottom: 20px;
+}
+.second {
+
+    text-align: right;
+}
+.big {
+    font-size: 18pt;
+}
+.text {
+    width: 600px;
+    margin: 0 auto;
+}

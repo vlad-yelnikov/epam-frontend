@@ -1,0 +1,77 @@
+h1:before, h1:after {
+    content: url(/images/icon.jpg);
+    font-family: "Dancing Script";
+}
+h1:before {
+    margin-right: 20px;
+}
+h1:after {
+    margin-left: 20px;
+}
+blockquote {
+    quotes: "\2039" "\203A";
+    font-size: 55px;
+    font-family: tahoma;
+}
+blockquote:before {
+    content: open-quote;
+    color: blue;
+    margin-right: 10px;
+}
+blockquote:after {
+    content: close-quote;
+    color: blue;
+    margin-left: 10px;
+}
+body {
+    counter-reset: h2;
+}
+h2 {
+    counter-reset: p;
+    color: #0ba562;
+}
+h2:before {
+    content: "Header " counter(h2) ". ";
+    counter-increment: h2;
+}
+p:before {
+    margin-left: 30px;
+    content: counter(h2) ". " counter(p) ". ";
+    counter-increment: p;
+}
+p{
+    color: red;
+}
+.text {
+    text-decoration: line-through;
+    text-indent: 20px;
+}
+.text2 {
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-indent: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+table {
+    border-spacing: 20px;
+    empty-cells: hide;
+}
+td {
+    border: 1px solid black;
+    padding: 40px;
+}
+li {
+    list-style-image: url(/images/small-diamond.png);
+}
+.div_1 {
+    height: 200px;
+    background: linear-gradient(to right, green, blue);
+    margin: 30px;
+}
+.div_2 {
+    height: 200px;
+    background: linear-gradient(to top right,violet , yellow);
+    margin: 30px;
+}
