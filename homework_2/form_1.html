@@ -9,141 +9,123 @@
 </head>
 <body>
     <form action="" >
-        <legend>Form 1</legend>
-        <fieldset>
-            <legend>1. Личные данные</legend>
-             <div>
-                 <label>
-                    <span>Обращение*</span>
-                    <input type="radio" name="appeal" value="Господин" checked required>
-                    <span>Господин</span>
-                </label>
-                <label>
-                    <input type="radio" name="appeal" value="Госпожа" required>
-                    <span>Госпожа</span>
-               </label>
-             </div>
-            <div>
-                <label>
-                    <span>Звание</span>
-                    <input type="text" name="title"  required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Имя*</span>
-                    <input type="text" name="first name" value="Sergey" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Фамилия*</span>
-                    <input type="text" name="last name" value="Sergeev" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Улица*</span>
-                    <input type="text" name="street" value="Lenina 22" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Индекс/город*</span>
-                    <input type="text" name="index" value="94000" required>
-                    <input type="text" name="city" value="Kiev" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Страна*</span>
-                    <input type="text" name="country" value="Украина" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Валюта*</span>
-                    <select name="currency" required>
-                        <option value="USD">Американский доллар (USD)</option>
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Дата рождения*</span>
-                    <input type="text" name="birthday" value="18.09.1987" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>E-mail*</span>
-                    <input type="email" name="email" value="sersergey6547@gmail.com" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Мобильный телефон</span>
-                    <select name="mobile phone">
-                        <option value="+380">+380</option>
-                    </select>
-                    <input type="tel" name="tel" value="" required>
-                    <input type="tel" name="tel" value="" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Телефон</span>
-                        <select name="phone">
+        <div class="wrapper">
+                <h3>Form 1</h3>
+                <div class="left-block">
+                    <h4>1. Личные данные</h4>
+                     <p>
+                        <label for="appeal">Обращение*</label>
+                        <label for="appeal" class="radio">Господин</label>
+                        <input type="radio" id="appeal" name="appeal" value="Господин" checked required>
+                        <label for="appeal-mrs" class="radio">Госпожа</label>
+                        <input type="radio" id="appeal-mrs" name="appeal" value="Госпожа" required>
+                     </p>
+                    <p>
+                        <label for="title">Звание</label>
+                        <input type="text"  id="title" name="title" size="30" class="valid">
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="first name">Имя*</label>
+                        <input type="text"  id="first name" name="first name" value="Sergey" size="30" class="valid" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="last name">Фамилия*</label>
+                        <input type="text" id="last name" name="last name" value="Sergeev" size="30" class="valid" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="street">Улица*</label>
+                        <input type="text" id="street" name="street" value="Lenina 22" size="30" class="valid" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="index">Индекс/город*</label>
+                        <input type="text id="index" name="index" value="94000" size="8" required>
+                        <input type="text" name="city" value="Kiev" size="17" class="valid" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="country">Страна*</label>
+                        <select id="country" name="country" value="Украина" required>
+                            <option value="USD">Украина</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="currency">Валюта*</label>
+                        <select id="currency" name="currency" required>
+                            <option value="USD">Американский доллар (USD)</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="birthday">Дата рождения*</label>
+                        <input type="text" id="birthday" name="birthday" value="18.09.1987" class="valid" size="30" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" value="sersergey6547@gmail.com" class="valid" size="30" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="mobile phone">Мобильный телефон</label>
+                        <select  id="mobile phone" name="mobile phone">
                             <option value="+380">+380</option>
                         </select>
-                        <input type="tel" name="tel" value="" required>
-                        <input type="tel" name="tel" value="" required>
-                    </label>
-                </div>      
-        </fieldset>
-        <fieldset>
-            <legend>2. Данные доступа</legend>
-            <div>
-                <label>
-                    <span>Пароль*</span>
-                    <input type="password" value="adfsdfdf" required>
-                    <span>(8-20 символов: цифры и буквы)</span>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Надежность пароля</span>
-                    <meter></meter>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Введите пароль еще раз*</span>
-                    <input type="password" value="adfsdfdf" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Контрольный вопрос*</span>
-                    <select name="question" required>
-                        <option value="USD">Название Вашего первого авто</option>
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <span>Ваш ответ*</span>
-                    <input type="text" value="seat leon" required>
-                </label>
-            </div>
-            <div>
-                <label>
-                    <input type="checkbox" required>
-                    <span>Я принимаю <a href="#"> Общие условия и положения и Политику конфиденциальности.</a> Мне уже исполнилось 18 лет, и я даю свое согласие на отправку мек рекламы и информации о продуктах компанией 
-                    bet-at-home.com. Я могу в любое время отказаться от своего согласия на получение рекламы и информации о продуктах в настройках своего счета.</span>
-                </label>
-            </div>
-        </fieldset>
+                        <input type="tel" name="tel" size="6">
+                        <input type="tel" name="tel" size="9" class="valid">
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="phone">Телефон</label>
+                        <select  id="phone" name="phone">
+                            <option value="+380">+380</option>
+                        </select>
+                        <input type="tel" name="tel" size="6">
+                        <input type="tel" name="tel" size="9" class="valid">
+                        <span></span>
+                    </p>      
+                </div>
+                <div class="right-block">
+                    <h4>2. Данные доступа</h4>
+                    <p>
+                        <label for="password">Пароль*</label>
+                        <input type="password" id="password" name="password" value="adfsdfdf" size="30" class="valid" required>
+                        <span></span>
+                        <p>(8-20 символов: цифры и буквы)</p>
+                    </p>
+                    <p>
+                        <label for="reliability">Надежность пароля</label>
+                        <meter id="reliability"></meter>
+                    </p>
+                    <p>
+                        <label for="password-check">Введите пароль еще раз*</label>
+                        <input type="password" id="password-check" name="password-check" value="adfsdfdf" size="30" class="valid" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="question">Контрольный вопрос*</label>
+                            <select  id="question" name="question" required>
+                                <option value="USD">Название Вашего первого авто</option>
+                            </select>
+                    </p>
+                    <p>
+                        <label for="answer">Ваш ответ*</label>
+                            <input type="text" id="answer" name="answer" value="seat leon" class="valid" size="30">
+                            <span></span>
+                    </p>
+                    <p class="accept">
+                        <input type="checkbox" required>
+                        Я принимаю <a href="#"> Общие условия и положения и Политику конфиденциальности.</a> 
+                            Мне уже исполнилось 18 лет, и я даю свое согласие на отправку мне рекламы и информации о продуктах компанией 
+                            bet-at-home.com. Я могу в любое время отказаться от своего согласия на получение рекламы и информации о продуктах в настройках своего счета.
+                    </p>
+                    <p>
+                        <input type="submit" value="Зарегистрироваться прямо сейчас!">
+                    </p>
+                </div>
+        </div>
     </form>
 </body>
 </html>

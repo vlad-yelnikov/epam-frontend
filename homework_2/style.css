@@ -1,0 +1,77 @@
+.wrapper {
+    width: 900px;
+    height: 600px;
+}
+h3 {
+    text-align: center;
+}
+.left-block {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.right-block {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+label:not(.radio) {
+    display: inline-block;
+    width: 40%;
+}
+input {
+    border-radius: 5px;
+    /* width: 30%; */
+}
+#country, #currency, #question {
+    width: 207px;
+}
+/* [type = "text"] {
+    width: 200px;
+}
+[type = "number"] {
+    -moz-appearance: textfield;
+    width: 60px;
+} */
+/* input {
+    float: right;
+} */
+/* span {
+    margin-right: 50px;
+} */
+/* input:required + :after {
+    content:'\2714';
+    color: green;
+} */
+.valid:valid + ::after {
+    content:'\2714';
+    color: green;
+}
+.valid:invalid + :after {
+    content:'\2714';
+    color: gray;
+}
+.accept {
+    background-color: rgb(221, 221, 221);
+    padding-left: 10px;
+    padding-right: 50px;
+}
+/* [type = "checkbox"] {
+    float: left;
+}
+p .accept {
+    padding-left: 40px;
+} */
+a {
+    color: #3682ad;
+    text-decoration: none;
+}
+[type = "submit"] {
+    color: white;
+    background-color: #a1cb54;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    width: 70%;
+    margin-left: 50px;
+}
